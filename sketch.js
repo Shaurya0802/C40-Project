@@ -13,6 +13,8 @@ var players, player1, player2, player3, player4;
 
 var player1Img,player2Img,player3Img,player4Img;
 
+var sound1;
+
 var track,ground;
 
 function preload(){
@@ -22,6 +24,7 @@ function preload(){
     player2Img = loadImage("images/Player2.png");
     player3Img = loadImage("images/Player3.png");
     player4Img = loadImage("images/Player4.png");
+    sound1 = loadSound("sounds/Beach_Bum_Happy_Rock.mp3");
 }
 
 function setup(){

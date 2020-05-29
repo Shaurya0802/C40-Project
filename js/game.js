@@ -44,6 +44,8 @@ class Game{
     play(){
         form.hide();
 
+        sound1.play();
+
         Player.getPlayerInfo();
         Player.getPlayersAtEnd();
 
@@ -66,7 +68,10 @@ class Game{
                 players[index - 1].y = y;
 
                 if(index === player.index){
-                    players[index-1].shapeColor = "red";
+                    stroke(0);
+                    fill(255,0,0)
+                    ellipse(x,y,60,60);
+                    //players[index-1].shapeColor = "red";
                     camera.position.x = displayWidth/2;
                     camera.position.y = players[index-1].y;
                 }
